@@ -4,6 +4,12 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from '@mui/material/Link';
 
 const CssTextField = styled(TextField)({
   '& label.Mui-focused': {
@@ -44,7 +50,16 @@ function Contact() {
         <CssTextField InputProps={{ style: { color: '#fff' } }} InputLabelProps={{ style: { color: '#fff' } }} label="Name" id="custom-css-outlined-input" />
         <CssTextField InputProps={{ style: { color: '#fff' } }} InputLabelProps={{ style: { color: '#fff' } }} label="Enter email" id="custom-css-outlined-input" />
         <CssTextField InputProps={{ style: { color: '#fff' } }} InputLabelProps={{ style: { color: '#fff' } }} label="Your message" id="custom-css-outlined-input" multiline rows={4} />
+        <Button variant="text" color='secondary' endIcon={<SendIcon />}>
+          Send
+        </Button>
       </Box>
+      <div className='contact__socialMedia'>
+        <Link href="https://www.linkedin.com/in/alputov-vova/"><LinkedInIcon sx={{ fontSize: '40px' }} color='secondary'></LinkedInIcon></Link>
+        <Link href="https://github.com/VOV44ER"><GitHubIcon sx={{ fontSize: '40px' }} color='secondary'></GitHubIcon></Link>
+        <Link href="#"><InstagramIcon sx={{ fontSize: '40px' }} color='secondary'></InstagramIcon></Link>
+      </div>
+      <h5 className='contact__miniTitle'>Alputov Vova &copy; 2022</h5>
     </div>
   );
 }

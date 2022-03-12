@@ -33,7 +33,7 @@ function Projects() {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea href='https://vov44er.github.io/layout_miami/index.html'>
+        <CardActionArea href='#'>
           <CardMedia
             component="img"
             height="140"
