@@ -1,0 +1,155 @@
+.about {
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  &__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    &-link {
+      text-decoration: none;
+      color: blueviolet;
+
+      &:hover {
+        color: #24242d;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 100px;
+    }
+
+    &-me {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      gap: 30px;
+
+      &-title {
+        @media (max-width: 600px) {
+          font-size: 24px;
+        }
+      }
+
+      &-text {
+        text-align: center;
+        font-size: 18px;
+
+        @media (max-width: 600px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      flex-grow: 1;
+
+      &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        &-title {
+          width: 150px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &-text {
+      width: 250px;
+    }
+
+    @media (max-width: 1024px) {
+      flex: 35%;
+    }
+  }
+
+  &__card-wrapper {
+    margin-top: 100px;
+    display: flex ;
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 50%;
+    display: block;
+    object-fit: contain;
+    color: #e4e4e4;
+    transform: translateY(50%);
+  }
+
+  &__title {
+    color: #24242d;
+    text-transform: uppercase;
+    margin-top: 60px;
+    font-size: 45px;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50%;
+      left: 25%;
+      height: 4px;
+      margin-top: 10px;
+      background: #24242d;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hex {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 325px;
+  background-color: #24242d;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  &--mini {
+    width: 100px;
+    height: 115px;
+  }
+}

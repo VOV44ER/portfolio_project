@@ -1,0 +1,35 @@
+.nav {
+  background-color: #24242d;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  @media (max-width: 600px) {
+    height: 25px;
+  }
+
+  &__link:hover {
+    color: blueviolet;
+    transition: 0.5s;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  } 
+  100% {
+      opacity: 0.9;
+      transform: translateY(0);
+  } 
+}
