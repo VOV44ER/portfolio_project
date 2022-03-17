@@ -68,6 +68,24 @@ function Projects() {
           </CardContent>
         </CardActionArea>
       </Card>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea href='https://vov44er.github.io/weather__app/'>
+          <CardMedia
+            component="img"
+            height="140"
+            image="./4.png"
+            alt="Weather App"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Weather App
+            </Typography>
+            <Typography variant="body1" color="primary">
+              Used technologies : React
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
       </div>
     </div>
   );
