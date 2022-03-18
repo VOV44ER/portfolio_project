@@ -69,7 +69,7 @@ function Projects() {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea href='https://vov44er.github.io/weather__app/'>
+        <CardActionArea href='https://vov44er.github.io/weather_app/'>
           <CardMedia
             component="img"
             height="140"
